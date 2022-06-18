@@ -1,0 +1,6 @@
+name: pogcore
+main: com.liverookie.voidcore.Main
+version: "0.1"
+api: ["1.0.13"]
+author: Liverookie
+description: A full core for voidcraft
