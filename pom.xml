@@ -9,18 +9,27 @@
     <packaging>jar</packaging>
 
     <dependencies>
+
         <dependency>
             <groupId>org.powernukkit</groupId>
             <artifactId>powernukkit</artifactId>
             <version>1.6.0.1-PN</version>
         </dependency>
+
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>powernukkit-snapshots</id> <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases><enabled>false</enabled></releases>
+        </repository>
+    </repositories>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
-         
+
 
     <build>
         <resources>
@@ -40,4 +49,6 @@
             </resource>
         </resources>
     </build>
+
+
 </project>
