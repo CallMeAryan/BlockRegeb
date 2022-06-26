@@ -1,6 +1,14 @@
-name: CloneMe
-main: net.liveerookie.voidcore.Main
+name: BlockRegen
+main: net.callmearyan.Blockregen.Main
 version: "${project.version}"
-load: POSTWORLD
-author: Nukkit Projectes
-description: Example plugin showing the API
+api: ["1.0.13"]
+author: CallMeAryan
+description: Simple Plugin That Regenrates blocks!
+commands:
+  blockregeb:
+    description: Main command
+    usage: "/blockregen <set/remove> <helditem/BlockID>"
+
+# Discord: Liven#1360
+# Support: Open a Issue at Github
+# Discord Server: https://discord.gg/DSgECqgYp4
