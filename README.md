@@ -1,3 +1,7 @@
+# What is block Regen?
+
+its a nukkit plugin regenrates blocks for RPG, Skyblock, Prison Servers.
+
 # Commands & Permissions
 
 
@@ -44,6 +48,7 @@ If you have any problems or any bugs, reach me out through opening Issue on gith
 
 Fastest Way to reach me out
 https://discord.gg/9s8cb9g7
+Liven#1360
 
 
 
