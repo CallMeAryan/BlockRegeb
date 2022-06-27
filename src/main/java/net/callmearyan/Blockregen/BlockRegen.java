@@ -82,7 +82,6 @@ public class BlockRegen extends PluginBase implements Listener {
 
 
         if (LS_bl.contains(BlockID)) {
-            player.sendMessage(e.getBlock().getId() + ":" + e.getBlock().getDamage());
 
 
             getServer().getScheduler().scheduleDelayedTask(this, new Runnable() {

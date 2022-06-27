@@ -36,16 +36,13 @@ public class BlockRegenCommand implements CommandExecutor {
             Player player = (Player) sender;
 
 
-            if(args.length == 1 && args[0].equalsIgnoreCase("reload")){
+            if(args.length == 1 && args[0].equalsIgnoreCase("reload") && player.hasPermission("blockregen.admin")){
                 conf_blocks.reload();
                 player.sendMessage(TextFormat.GREEN + "config reloaded successfully!");
             }
 
-            if (args.length == 3 && args[0].equalsIgnoreCase("set")){
 
-                }
-
-            if (args.length == 2 && args[0].equalsIgnoreCase("set")){
+            if (args.length == 2 && args[0].equalsIgnoreCase("set") && player.hasPermission("blockregen.admin")){
 
                 if (args[1].equalsIgnoreCase("helditem")){
 
@@ -83,7 +80,7 @@ public class BlockRegenCommand implements CommandExecutor {
 
 
 
-            }else if (args.length == 2 && args[0].equalsIgnoreCase("remove")) {
+            }else if (args.length == 2 && args[0].equalsIgnoreCase("remove") && player.hasPermission("blockregen.admin")) {
 
                 try {
                     int BlockID = Integer.parseInt(args[1]);
@@ -109,6 +106,6 @@ public class BlockRegenCommand implements CommandExecutor {
             }
         }
 
-        return true;
+        return false;
     }
 }
