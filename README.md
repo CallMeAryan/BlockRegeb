@@ -1,34 +1,55 @@
-# Example Plugin for PowerNukkit
-This is an example plugin which can also be used as template to start your own plugin.
+# What is block Regen?
 
-As an example I created a plugin named clone-me, it creates a clone of yourself when you run `/clone`
-and gives you a flower if you hit the clone and then despawn the clone. It also send some fancy messages.
+its a nukkit plugin regenrates blocks for RPG, Skyblock, Prison Servers.
 
-These is enough to serve as an example on how to:
-- Begin a new plugin
-- Create event listeners and handlers
-- Create custom commands
-- Format text
-- Spawn NPCs
-- Despawn NPCs
-- Detect attacks
-- Make entities invulnerable
-- Create and fill a `plugin.yml` file
-- Debug your plugin properly
+# Commands & Permissions
 
-## Cloning and importing
-1. Just do a normal `git clone https://github.com/PowerNukkit/ExamplePlugin.git` (or the URL of your own git repository)
-2. Import the `pom.xml` file with your IDE, it should do the rest by itself
 
-## Debugging
-1. Create a zip file containing only your `plugin.yml` file
-2. Rename the zip file to change the extension to jar
-3. Create an empty folder anywhere, that will be your server folder.  
-   <small>_Note: You don't need to place the PowerNukkit jar in the folder, your IDE will load it from the maven classpath._</small>
-4. Create a folder named `plugins` inside your server folder  
-   <small>_Note: It is needed to bootstrap your plugin, your IDE will load your plugin classes from the classpath automatically,
-   so it needs to have only the `plugin.yml` file._</small>
-5. Move the jar file that contains only the `plugin.yml` to the `plugins` folder
-6. Create a new Application run configuration setting the working directory to the server folder and the main class to:  `cn.nukkit.Nukkit`  
-![](https://i.imgur.com/NUrrZab.png)
-7. Now you can run in debug mode. If you change the `plugin.yml` you will need to update the jar file that you've made.
+
+/blockregen - Main command
+
+/blockregen reload - permission: blockregen.admin
+
+/blockregen add <helditem/BlockID> - permission: blockregen.admin
+
+/blockregen remove <helditem/BlockID> - permission: blockregen.admin
+
+
+
+
+
+# How to add more blocks ?
+
+
+
+simply add your BlockID into Blocks.yml or with in-game command
+
+/blockregen <add/remove> <helditem/BlockID>
+
+
+
+ex. /blockregen add 3
+
+     /blockregen remove 3
+
+     /blockregen add helditem
+
+
+
+
+
+List of BlockIDs:- https://www.digminecraft.com/lists/item_id_list_pe.php
+
+# Problem/Bug?
+
+If you have any problems or any bugs, reach me out through opening Issue on github, on Discord server ill try my best to help you out!!
+
+
+
+Fastest Way to reach me out
+https://discord.gg/9s8cb9g7
+Liven#1360
+
+
+
+# TODO: add Region based blocks, custom drops, per-block regen delay, what to regen what to replace from and all, if you want any feature added let me know
