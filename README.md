@@ -10,7 +10,7 @@ its a nukkit plugin regenrates blocks for RPG, Skyblock, Prison Servers.
 
 /blockregen reload - permission: blockregen.admin
 
-/blockregen add <helditem/BlockID> - permission: blockregen.admin
+/blockregen set <helditem/BlockID> - permission: blockregen.admin
 
 /blockregen remove <helditem/BlockID> - permission: blockregen.admin
 
@@ -24,11 +24,11 @@ its a nukkit plugin regenrates blocks for RPG, Skyblock, Prison Servers.
 
 simply add your BlockID into Blocks.yml or with in-game command
 
-/blockregen <add/remove> <helditem/BlockID>
+/blockregen <set/remove> <helditem/BlockID>
 
 
 
-ex. /blockregen add 3
+ex. /blockregen set 3
 
      /blockregen remove 3
 
